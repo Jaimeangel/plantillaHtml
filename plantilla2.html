@@ -1,0 +1,144 @@
+<!-- CONTENEDOR GENERAL CENTRADO -->
+<table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif; font-size:10pt;">
+    <tr>
+      <td style="padding:16px;">
+  
+        <!-- MARCO PRINCIPAL DEL ACTA -->
+        <table style="width:100%; max-width:850px; margin:0 auto; border:1px solid #000; border-collapse:collapse; font-size:10pt;">
+          <!-- ENCABEZADO TÍTULO -->
+          <tr>
+            <td colspan="2" style="text-align:center; font-weight:bold; padding-top:12px;">
+              PROCESO DE GESTIÓN DE INFRAESTRUCTURA
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center; font-weight:bold; padding-bottom:8px;">
+              ACTIVOS FIJOS
+            </td>
+          </tr>
+  
+          <!-- TIPO SOLICITUD + FECHA ENTREGA -->
+          <tr>
+            <!-- LADO IZQUIERDO -->
+            <td style="padding:6px 10px; vertical-align:top; width:70%;">
+              <span style="font-weight:bold;">Tipo solicitud: </span>
+              <span>{{TipoSolicitud}}</span>
+              <br /><br />
+              <span style="font-style:italic;">Activo (s) entregado (s) a:&nbsp;</span>
+              <span>{{NombreEntrega}}</span>
+              <br />
+              <span>({{IdEntrega}})</span>
+            </td>
+  
+            <!-- LADO DERECHO: FECHA -->
+            <td style="padding:6px 10px; vertical-align:top; width:30%;">
+              <table style="width:100%; border:1px solid #000; border-collapse:collapse; font-size:9pt;">
+                <tr>
+                  <td style="text-align:center; font-weight:bold; padding:4px; border-bottom:1px solid #000;">
+                    Fecha de entrega
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align:center; padding:4px; vertical-align:middle;">
+                    {{FechaEntrega}}
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+  
+          <!-- ESPACIO -->
+          <tr>
+            <td colspan="2" style="height:6px;"></td>
+          </tr>
+  
+          <!-- RELACIÓN DE ACTIVOS (TABLA COMPLETA VIENE EN LA VARIABLE) -->
+          <tr>
+            <td colspan="2" style="padding:0 10px 8px 10px;">
+              {{TABLA_ACTIVOS_HTML}}
+            </td>
+          </tr>
+  
+          <!-- ESPACIO -->
+          <tr>
+            <td colspan="2" style="height:8px;"></td>
+          </tr>
+  
+          <!-- DATOS DE QUIEN ENTREGA / RECIBE -->
+          <tr>
+            <td colspan="2" style="padding:0 10px 10px 10px;">
+              <table style="width:100%; border-collapse:collapse; border:1px solid #000; font-size:9.5pt;">
+                <!-- ENCABEZADOS PRINCIPALES -->
+                <tr style="background:#e6e6e6; font-weight:bold; text-align:center;">
+                  <td colspan="2" style="border-right:1px solid #000; padding:4px;">Datos de quien entrega</td>
+                  <td colspan="2" style="padding:4px;">Datos de quien recibe</td>
+                </tr>
+  
+                <!-- NOMBRE -->
+                <tr style="background:#f2f2f2; font-weight:bold; text-align:center;">
+                  <td colspan="2" style="border-top:1px solid #000; border-right:1px solid #000; padding:4px;">Nombre</td>
+                  <td colspan="2" style="border-top:1px solid #000; padding:4px;">Nombre</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="border-top:1px solid #000; border-right:1px solid #000; padding:4px;">
+                    {{NombreEntrega}}<br />
+                    ({{IdEntrega}})
+                  </td>
+                  <td colspan="2" style="border-top:1px solid #000; padding:4px;">
+                    {{NombreRecibe}}<br />
+                    ({{IdRecibe}})
+                  </td>
+                </tr>
+  
+                <!-- CARGO -->
+                <tr style="background:#f2f2f2; font-weight:bold; text-align:center;">
+                  <td colspan="2" style="border-top:1px solid #000; border-right:1px solid #000; padding:4px;">Cargo</td>
+                  <td colspan="2" style="border-top:1px solid #000; padding:4px;">Cargo</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="border-top:1px solid #000; border-right:1px solid #000; padding:4px;">
+                    {{CargoEntrega}}
+                  </td>
+                  <td colspan="2" style="border-top:1px solid #000; padding:4px;">
+                    {{CargoRecibe}}
+                  </td>
+                </tr>
+  
+                <!-- ENTIDAD LEGAL -->
+                <tr style="background:#f2f2f2; font-weight:bold; text-align:center;">
+                  <td colspan="2" style="border-top:1px solid #000; border-right:1px solid #000; padding:4px;">Entidad legal</td>
+                  <td colspan="2" style="border-top:1px solid #000; padding:4px;">Entidad legal</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="border-top:1px solid #000; border-right:1px solid #000; padding:4px;">
+                    {{EntidadEntrega}}
+                  </td>
+                  <td colspan="2" style="border-top:1px solid #000; padding:4px;">
+                    {{EntidadRecibe}}
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+  
+          <!-- NOTAS -->
+          <tr>
+            <td colspan="2" style="padding:0 10px 10px 10px;">
+              <table style="width:100%; border-collapse:collapse; border:1px solid #000; font-size:9.5pt;">
+                <tr>
+                  <td style="width:80px; font-weight:bold; border-right:1px solid #000; padding:4px;">Notas:</td>
+                  <td style="padding:4px; height:40px;">
+                    {{Notas}}
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+  
+        </table>
+        <!-- FIN MARCO PRINCIPAL -->
+  
+      </td>
+    </tr>
+  </table>
+  
